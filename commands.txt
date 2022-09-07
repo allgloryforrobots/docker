@@ -1,0 +1,25 @@
+docker 			команды
+docker build . 		собрать образ
+docker image ls		взять image id 
+docker run [вставляем image id с предыдущей команды]
+
+
+установить образ и посмотреть образы
+docker pull node
+docker images
+или docker run node [тут можно с предыдущей команды взять образ]
+
+docker ps --help посмотреть справку по любой команде добавить --help
+
+docker ps список всех контейнеров запущенных
+
+docker ps --all вообще все которые на ОС
+
+docker run -it node
+(запустить ноду в интерактивном режиме)
+
+контейнеры после запуска копятся их надо удалять
+
+docker rm [id]
+
+docker container prune удаляет все контейнеры которые установлены и не используются
