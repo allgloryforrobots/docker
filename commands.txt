@@ -23,3 +23,15 @@ docker run -it node
 docker rm [id]
 
 docker container prune удаляет все контейнеры которые установлены и не используются
+
+docker build . создать образ
+(образ создается без имени и тега, но у него есть айди)
+
+
+// ошибки
+если не запускается build .
+cmd => в командную строку
+"C:\Program Files\Docker\Docker\DockerCli.exe" -SwitchDaemon
++
+docker pull node
++ docker build .

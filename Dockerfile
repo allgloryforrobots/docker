@@ -1,7 +1,12 @@
-FROM python
+FROM node
 
-WORKDIR /app
+WORKDIR /app 
 
 COPY . .
+# эквивалентно COPY . /app
 
-CMD ["python", "index.py"]
+RUN npm install
+
+EXPOSE 3000
+
+CMD ["node", "app.js"]
